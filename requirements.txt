@@ -1,1 +1,3 @@
-requests, random, threading
+pip install requests
+pip install random
+pip install threading
