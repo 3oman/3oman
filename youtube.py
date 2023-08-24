@@ -1,5 +1,7 @@
 import requests, random, threading
 r = requests.session()
+app = Flask(__name__)
+@app.route('/')
 def yout():
     try:
         while True:
@@ -27,10 +29,6 @@ def yout():
                 requests.get(url, params=params)
     except:
         ff=3
-threads = []
-for i in range(50):
-    thread1 = threading.Thread(target=yout)
-    thread1.start()
-    threads.append(thread1)
-for thread2 in threads:
-    thread2.join()
+def yout()
+if __name__ == '__main__':
+    app.run()
